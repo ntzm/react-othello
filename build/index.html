@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>React Reversi</title>
+    <style>
+    #reversi {
+        text-align: center;
+    }
+
+    .board {
+        display: inline-block;
+        border: 25px black solid;
+        border-radius: 25px;
+    }
+
+    .board__row {
+        height: 37px;
+    }
+
+    .cell {
+        position: relative;
+        display: inline-block;
+        border: 1px #004400 solid;
+        width: 35px;
+        height: 35px;
+        background: #006600;
+    }
+
+    .counter {
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
+
+    .counter--player-1 {
+        background: #ddd;
+    }
+
+    .counter--player-2 {
+        background: #222;
+    }
+    </style>
+</head>
+<body>
+    <div id="reversi"></div>
+    <script src="assets/bundle.js"></script>
+</body>
+</html>
